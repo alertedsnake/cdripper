@@ -155,7 +155,7 @@ def fetchCoverImage(outdir, artist, album):
 
     url = entry.medium_image_url
 
-    if url is None:
+    if not url:
         debug("Failed to find cover image!")
         return None
 
